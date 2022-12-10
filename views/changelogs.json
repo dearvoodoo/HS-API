@@ -1,0 +1,132 @@
+[
+    {
+        "version": "1.0.0 [WIP]",
+        "date": "??/??/2022 00:00",
+        "changes": [
+            {
+                "tag": "new",
+                "change": "Big changes for 1.0 !"
+            },
+            {
+                "tag": "update",
+                "change": "This API version match with game version 1.9"
+            },
+            {
+                "tag": "new",
+                "change": "Changelogs page on the website"
+            },
+            {
+                "tag": "remove",
+                "change": "<code>/weapon_info</code> endpoint."
+            },
+            {
+                "tag": "remove",
+                "change": "<code>/trait_info</code> endpoint."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/version</code> or <code>/v</code> endpoint. Return API version and game version API using."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/traitinfo</code> endpoint. Like the old one but up to date and with more information."
+            },
+            {
+                "tag": "update",
+                "change": "<code>/traits</code> endpoint. Add missing traits."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/ammo</code> endpoint. Return all ammo from the game. Easy parse with enpoint bellow"
+            },
+            {
+                "tag": "new",
+                "change": "<code>/ammo/:ammoId</code> endpoint. Return only information for ammo with ID define in URL."
+            },
+            {
+                "tag": "update",
+                "change": "<code>/weapons</code> endpoint. Add missing weapons."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/weaponinfo</code> endpoint. Like the old one but up to date and with more information."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/legendary_skin</code> endpoint. Return all legendary skin from the game. Easy parse with enpoint bellow"
+            },
+            {
+                "tag": "new",
+                "change": "<code>/legendary_skin/:legendaryId</code> endpoint. Return only information for legendary skin with ID define in URL."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/tools</code> endpoint. Get list of all tools in the game."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/toolinfo</code> endpoint. Tool information. Like other endpoints you can use queries for parsing specific info."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/consumables</code> endpoint. Get list of all consumables in the game."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/consumableinfo</code> endpoint. Consumable information. Like other endpoints you can use queries for parsing specific info."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/damagetype</code> endpoint. Return all damage type from the game. Easy parse with enpoint bellow"
+            },
+            {
+                "tag": "new",
+                "change": "<code>/damagetype/:damageId</code> endpoint. Return only information for damage type with ID define in URL."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/hunters</code> endpoint. Get list of all hunters in the game."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/hunterinfo</code> endpoint. Hunter information. Like other endpoints you can use queries for parsing specific info."
+            },
+            {
+                "tag": "new",
+                "change": "<code>/dlc</code> endpoint. Return all DLC from the game. Easy parse with enpoint bellow"
+            },
+            {
+                "tag": "new",
+                "change": "<code>/dlc/:dlcId</code> endpoint. Return only information for DLC with ID define in URL. (ID of DLCs are SteamId)"
+            },
+            {
+                "tag": "update",
+                "change": "Rework the entire API for a more optimal and simple use."
+            },
+            {
+                "tag": "update",
+                "change": "Host images on <a href='https://huntshowdown.dearvoodoo.com' target='_blank'>https://huntshowdown.dearvoodoo.com</a>"
+            }
+        ]
+    },
+    {
+        "version": "0.0.2",
+        "date": "16/09/2021 17:35",
+        "changes": [
+            {
+                "tag": "new",
+                "change": "Upload images on Github"
+            }
+        ]
+    },
+    {
+        "version": "0.0.1",
+        "date": "18/08/2021 04:00",
+        "changes": [
+            {
+                "tag": "new",
+                "change": "API Created"
+            }
+        ]
+    }
+]

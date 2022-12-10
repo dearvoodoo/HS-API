@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hunt: Showdown API</title>
+    <link rel="shortcut icon" href="https://www.huntshowdown.com/assets/img/favicon.ico">
+    <link rel='stylesheet' href='https://dearvoodoo.com/library/fontawesome/css/all.css'>
+    <link rel="stylesheet" href="https://huntshowdown-api.herokuapp.com/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="loader">
+        <h1>Hunt Showdown API</h1>
+    </div>
+    <!-- partial:index.partial.html
+    <div class="dark-light">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+    </div> -->
+    <div class="app">
+        <div class="header">
+            <div class="menu-circle"></div>
+            <div class="header-menu">
+                <a class="menu-link" href="#">API Version <span id="version"></span></a>
+                <a class="menu-link" href="#">Game Version <span id="version_game"></span></a>
+                <a class="menu-link" href="https://trello.com/b/WQYee7Aq/hunt-showdown-api">Follow Development</a>
+                <!--<a class="menu-link" href="#">Menu 4</a>-->
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="side-wrapper">
+                    <div class="side-title">Hunt: Showdown API</div>
+                    <div class="side-menu">
+                        <a href="https://huntshowdown-api.herokuapp.com" class="is-active">
+                            <i class="fal fa-user-secret"></i>
+                            Presentation
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/how-to-use">
+                            <i class="fal fa-question-circle"></i>
+                            How to use
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/endpoints">
+                            <i class="fal fa-traffic-light-stop"></i>
+                            Endpoints
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/credits">
+                            <i class="fal fa-face-smile-hearts"></i>
+                            Credits
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/changelogs">
+                            <i class="fal fa-battery-bolt"></i>
+                            Changelogs
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">VooDoo Links</div>
+                    <div class="side-menu">
+                        <a href="https://www.dearvoodoo.com">
+                            <i class="fal fa-globe"></i>
+                            Website
+                        </a>
+                        <a href="https://twitter.com/DearVooDoo">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="https://twitch.tv/dear_voodoo">
+                            <i class="fab fa-twitch"></i>
+                            Twitch
+                        </a>
+                        <a href="https://discord.gg/XeeXPA7">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://github.com/dearvoodoo">
+                            <i class="fab fa-github"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Hunt: Showdown Links</div>
+                    <div class="side-menu">
+                        <a href="https://www.huntshowdown.com">
+                            <i class="fal fa-globe"></i>
+                            Website
+                        </a>
+                        <a href="https://twitter.com/HuntShowdown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/huntshowdown/">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/huntthegame/">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="https://www.youtube.com/user/CrytekHunt">
+                            <i class="fab fa-youtube"></i>
+                            YouTube
+                        </a>
+                        <a href="https://www.twitch.tv/directory/game/Hunt%3A%20Showdown">
+                            <i class="fab fa-twitch"></i>
+                            Twitch
+                        </a>
+                        <a href="https://discord.gg/huntshowdown">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://vk.com/huntshowdownofficial">
+                            <i class="fab fa-vk"></i>
+                            VK
+                        </a>
+                        <a href="https://www.tiktok.com/@huntshowdownofficial?lang=en">
+                            <i class="fab fa-tiktok"></i>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Copy</div>
+                    <div class="side-menu">
+                        <p class="copy">
+                            Made with
+                            <span><i class="fal fa-heart"></i> & <i class="fal fa-coffee"></i></span>
+                            in France
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="main-header">
+                    <a class="menu-link-main" href="#">Presentation</a>
+                    <!--<div class="header-menu">
+            <a class="main-header-link is-active" href="#">Desktop</a>
+            <a class="main-header-link" href="#">Mobile</a>
+            <a class="main-header-link" href="#">Web</a>
+
+          </div>-->
+                </div>
+                <div class="content-wrapper">
+                    <!-- Buy Hunt -->
+                    <div class="content-wrapper-header">
+                        <div class="content-wrapper-context">
+                            <h3 class="img-content">
+                                Hunt: Showdown
+                            </h3>
+                            <div class="content-text">Hunt: Showdown is a competitive first-person PvP bounty hunting
+                                game with heavy PvE elements, from the makers of Crysis. Set in the darkest corners of
+                                the world, it packs the thrill of survival games into a match-based format.</div>
+                            <div class="current-price">
+                                <span id="price">??€</span>
+                                <span class="discount" id="discount" style="display:none">Save 50%</span>
+                            </div>
+                            <a class="btn-homeprimary" href="https://eu-shop.crytek.com/games/hunt-showdown">
+                                <i class="fal fa-shopping-cart mr-2"></i> Get Hunt: Showdown Now
+                            </a>
+                        </div>
+                        <img class="content-wrapper-img" src="https://www.huntshowdown.com/assets/img/logo-nav.png"
+                            alt="">
+                    </div>
+                    <!-- END - Buy Hunt -->
+                    <!-- API what ? -->
+                    <div class="content-section">
+                        <div class="content-section-title">What is an API ?</div>
+                        <div class="card">
+                            <span>
+                                API stands for Application Programming Interface.<br>
+                                In basic terms, APIs are a set of functions and procedures that allow for the creation of applications. They access the data and features of other applications, services, or operating systems.<br>
+                                Essentially, they’re a go-between for different software platforms. They allow two unrelated applications to “talk” to each other.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END - API what ? -->
+                    <!-- Presentation -->
+                    <div class="content-section">
+                        <div class="content-section-title">What is this about ?</div>
+                        <div class="card">
+                            <span>
+                                Hunt: Showdown API is a fan-made API with all the info you need to build your app about the game.<br>
+                                By all info, I mean weapons, ammo, hunters, DLCs, tools, legendaries and consumables.<br>
+                                There are no stats or rankings of players as we do not have access to this kind of information.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END - Presentation -->
+                    <!-- Disclaimer -->
+                    <div class="content-section">
+                        <div class="content-section-title">Disclaimer</div>
+                        <div class="card">
+                            <span>
+                                This site and API is not associated with, endorsed by, or in any other form connected with
+                                CRYTEK GMBH or any other company.<br>
+                                It's a fan project. If anything is wrong, feel free to contact the author via Twitter <a
+                                    href="https://www.twitter.com/DearVooDoo">@DearVooDoo</a>.<br>
+                                Use at your own risk.<br>
+                                Good news are, this site does not use cookies and is running in your browser, no data is
+                                saved on the server.<br>
+                                Links are not affiliate. Only free sharing <i class="fal fa-heart"></i>
+                                <br><br>
+                                Thanks to <a href="https://www.crytek.com" target="_blank">Crytek</a> for this amazing
+                                game.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END - Disclaimer -->
+            </div>
+        </div>
+    </div>
+    <div class="overlay-app"></div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://huntshowdown-api.herokuapp.com/script.js"></script>
+
+</body>
+
+</html>

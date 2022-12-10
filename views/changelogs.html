@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hunt: Showdown API</title>
+    <link rel="shortcut icon" href="https://www.huntshowdown.com/assets/img/favicon.ico">
+    <link rel='stylesheet' href='https://dearvoodoo.com/library/fontawesome/css/all.css'>
+    <link rel="stylesheet" href="https://huntshowdown-api.herokuapp.com/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/rainbow.min.css">
+
+</head>
+
+<body>
+    <div class="loader">
+        <h1>Hunt Showdown API</h1>
+    </div>
+    <!-- partial:index.partial.html 
+    <div class="dark-light">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+    </div>-->
+    <div class="app">
+        <div class="header">
+            <div class="menu-circle"></div>
+            <div class="header-menu">
+                <a class="menu-link" href="#">API Version <span id="version"></span></a>
+                <a class="menu-link" href="#">Game Version <span id="version_game"></span></a>
+                <a class="menu-link" href="https://trello.com/b/WQYee7Aq/hunt-showdown-api">Follow Development</a>
+                <!--<a class="menu-link" href="#">Menu 4</a>-->
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="side-wrapper">
+                    <div class="side-title">Hunt: Showdown API</div>
+                    <div class="side-menu">
+                        <a href="https://huntshowdown-api.herokuapp.com">
+                            <i class="fal fa-user-secret"></i>
+                            Presentation
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/how-to-use">
+                            <i class="fal fa-question-circle"></i>
+                            How to use
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/endpoints">
+                            <i class="fal fa-traffic-light-stop"></i>
+                            Endpoints
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/credits">
+                            <i class="fal fa-face-smile-hearts"></i>
+                            Credits
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                        <a href="https://huntshowdown-api.herokuapp.com/changelogs" class="is-active">
+                            <i class="fal fa-battery-bolt"></i>
+                            Changelogs
+                            <!--<span class="notification-number updates">3</span>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">VooDoo Links</div>
+                    <div class="side-menu">
+                        <a href="https://twitter.com/DearVooDoo">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="https://twitch.tv/dear_voodoo">
+                            <i class="fab fa-twitch"></i>
+                            Twitch
+                        </a>
+                        <a href="https://discord.gg/XeeXPA7">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://github.com/dearvoodoo">
+                            <i class="fab fa-github"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Hunt: Showdown Links</div>
+                    <div class="side-menu">
+                        <a href="https://www.huntshowdown.com">
+                            <i class="fal fa-globe"></i>
+                            Website
+                        </a>
+                        <a href="https://twitter.com/HuntShowdown">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/huntshowdown/">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/huntthegame/">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="https://www.youtube.com/user/CrytekHunt">
+                            <i class="fab fa-youtube"></i>
+                            YouTube
+                        </a>
+                        <a href="https://www.twitch.tv/directory/game/Hunt%3A%20Showdown">
+                            <i class="fab fa-twitch"></i>
+                            Twitch
+                        </a>
+                        <a href="https://discord.gg/huntshowdown">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://vk.com/huntshowdownofficial">
+                            <i class="fab fa-vk"></i>
+                            VK
+                        </a>
+                        <a href="https://www.tiktok.com/@huntshowdownofficial?lang=en">
+                            <i class="fab fa-tiktok"></i>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+                <div class="side-wrapper">
+                    <div class="side-title">Copy</div>
+                    <div class="side-menu">
+                        <p class="copy">
+                            Made with
+                            <span><i class="fal fa-heart"></i> & <i class="fal fa-coffee"></i></span>
+                            in France
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="main-header">
+                    <a class="menu-link-main" href="#">Changelogs</a>
+                    <!--
+                    <div class="header-menu">
+                        <a class="main-header-link is-active" href="#">Desktop</a>
+                        <a class="main-header-link" href="#">Mobile</a>
+                        <a class="main-header-link" href="#">Web</a>
+                    </div>
+                    -->
+                </div>
+                <div class="content-wrapper">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-redprimary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Select a Version</button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left dropdown-multicol2 text-center">
+                            <div class="dropdown-col" id="even"></div>
+                            <div class="dropdown-col" id="odd"></div>
+                        </div>
+                    </div>
+                    <div class="container py-2" id="changelogs">
+                        <!-- JS Put changelogs here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-app"></div>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="https://huntshowdown-api.herokuapp.com/script.js"></script>
+
+</body>
+
+</html>
